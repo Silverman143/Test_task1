@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{602D4D24-CF27-9493-76E0-539E384FDF76}</ProjectGuid>
+    <ProjectGuid>{F3279A74-A616-0B1F-4B82-6F8239F5B385}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,9 @@
     <Compile Include="Assets/Scripts/ScoreHandler.cs" />
     <Compile Include="Assets/Scripts/ColorPaletteHandler.cs" />
     <Compile Include="Assets/Scripts/DataBase/DataBase.cs" />
+    <Compile Include="Assets/Scripts/OutZoneHandler.cs" />
+    <Compile Include="Assets/Scripts/BallsCharacteristics.cs" />
+    <Compile Include="Assets/Scripts/WallsHandler.cs" />
     <Compile Include="Assets/Scripts/ColorHandler.cs" />
     <Compile Include="Assets/Scripts/GameHandler.cs" />
     <Compile Include="Assets/Scripts/Buttons.cs" />
@@ -63,9 +66,6 @@
     <Compile Include="Assets/Scripts/BallController.cs" />
     <Compile Include="Assets/Scripts/RocketController.cs" />
     <Compile Include="Assets/Scripts/DataBase/DataController.cs" />
-    <Compile Include="Assets/Scripts/WallsHandler.cs" />
-    <Compile Include="Assets/Scripts/OutZoneHandler.cs" />
-    <Compile Include="Assets/Scripts/BallsCharacteristics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -767,7 +767,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ParrelSync.csproj">
-      <Project>{C79653B6-A127-0A37-996B-85B86329DB40}</Project>
+      <Project>{A1532964-6692-54B5-F66D-F6E46158B5B7}</Project>
       <Name>ParrelSync</Name>
     </ProjectReference>
   </ItemGroup>

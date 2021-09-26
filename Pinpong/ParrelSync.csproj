@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C79653B6-A127-0A37-996B-85B86329DB40}</ProjectGuid>
+    <ProjectGuid>{A1532964-6692-54B5-F66D-F6E46158B5B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>ParrelSync</AssemblyName>
@@ -53,21 +53,18 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/AssetModBlock/ParrelSyncAssetModificationProcessor.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/AssetModBlock/EditorQuit.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/UpdateChecker.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ClonesManager.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ClonesManagerWindow.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/Preferences.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ValidateCopiedFoldersIntegrity.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ExternalLinks.cs" />
-    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/FileUtilities.cs" />
     <Compile Include="Assets/ParrelSync/ParrelSync/Editor/Project.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ExternalLinks.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ClonesManagerWindow.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/AssetModBlock/ParrelSyncAssetModificationProcessor.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ClonesManager.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/ValidateCopiedFoldersIntegrity.cs" />
     <Compile Include="Assets/ParrelSync/ParrelSync/Editor/NonCore/OtherMenuItem.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/UpdateChecker.cs" />
     <Compile Include="Assets/ParrelSync/ParrelSync/Editor/NonCore/AskFeedbackDialog.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/FileUtilities.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/AssetModBlock/EditorQuit.cs" />
+    <Compile Include="Assets/ParrelSync/ParrelSync/Editor/Preferences.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/ParrelSync/ParrelSync/projectCloner.asmdef" />
@@ -316,20 +313,20 @@
     <Reference Include="log4netPlastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data">
+      <HintPath>Assets/Plugins/Sqlite3/Mono.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>Assets/Plugins/Sqlite3/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Data">
-      <HintPath>Assets/Plugins/Mono.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy@1.7.1/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
